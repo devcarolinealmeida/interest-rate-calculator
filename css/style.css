@@ -1,0 +1,23 @@
+:root {
+    /*cores*/
+    --azul-ciano: hsl(172, 67%, 45%);
+    --azul-escuro: hsl(183, 100%, 15%);
+    --azul-claro: hsl(185, 41%, 84%);
+    --cinza: hsl(186, 14%, 43%);
+    --cinza-claro: hsl(184, 14%, 56%);
+    --branco: hsl(189, 41%, 97%);
+
+    /*fontes*/
+    --fonte-principal: 'Roboto', sans-serif;
+    --fonte-body: 400;
+    --fonte-titulo: 700;
+    --fonte-italic: italic;
+}
+
+
+body {
+    background-color: var(--azul-claro);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: var(--fonte-body);
+}
