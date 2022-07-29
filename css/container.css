@@ -74,3 +74,43 @@
     color: var(--azul-escuro);
     text-align: center;
 }
+
+.container__resultados {
+    background-color: var(--azul-escuro);
+    padding: 2em;
+    border-radius: 5px;
+    display: flex;
+}
+
+.resultados__linha {
+    display: flex;
+    margin-bottom: 2.5em;
+    align-items: center;
+}
+
+.resultados__titulo {
+    color: var(--branco);
+    width: 40%;
+}
+
+.resultados__valor {
+    color: var(--azul-ciano);
+    font-weight: var(--fonte-titulo);
+    font-size: 2em;
+    width: 60%;
+    text-align: right;
+}
+
+.resultados__button {
+    background: var(--azul-ciano);
+    border: 0;
+    border-radius: 5px;
+    color: var(--azul-escuro);
+    font-family: var(--fonte-body);
+    font-weight: var(--fonte-titulo);
+    padding: .5em 1em;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+}
