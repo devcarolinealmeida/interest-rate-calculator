@@ -6,6 +6,9 @@
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: var(--branco);
     padding: 2em;
     height: 70%;
@@ -25,7 +28,6 @@
     border-radius: 5px;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 2em;
     color: var(--azul-escuro);
     font-family: var(--fonte-body);
     font-weight: var(--fonte-titulo);
@@ -46,11 +48,15 @@
     color: var(--cinza);
 }
 
+.infos__box-juros {
+    margin: 2em 0;
+}
+
 .infos-grid {
     display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 1em;
-    margin-bottom: 2em;
+    grid-template-columns: 49% 49%;
+    gap: .5em;
+    width: 100%;
 }
 
 .infos__button-porcentagem, .infos__input-porcentagem {
@@ -113,4 +119,34 @@
     text-transform: uppercase;
     display: block;
     width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        width: 50%;
+        height: auto;
+        align-items: center;
+    }
+    .container__infos {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .infos-grid {
+        grid-template-columns: 33% 33% 33%;
+        width: 99%;
+        margin-top: 0;
+    }
+    .container__resultados {
+        width: 35%;
+        height: 80%;
+        margin-top: 0;
+    }
+    .resultados__coluna {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
