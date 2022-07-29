@@ -1,0 +1,81 @@
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: var(--branco);
+    padding: 2em;
+    height: 70%;
+    width: 80%;
+    margin: 10% auto;
+    border-radius: 20px;
+}
+
+.container__titulo {
+    margin-bottom: .5em;
+}
+
+.container__input {
+    padding: .8em;
+    border: none;
+    background: var(--cinza-claro);
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    color: var(--azul-escuro);
+    font-family: var(--fonte-body);
+    text-align: center;
+}
+
+.container__input::placeholder {
+    background: url(../img/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: .6em;
+    color: var(--cinza);
+}
+
+.input-parcelas::placeholder {
+    background: url(../img/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: .6em;
+    color: var(--cinza);
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.porcentagem-button {
+    background: var(--azul-escuro);
+    border-radius: 5px;
+    border: 0;
+    color: var(--branco);
+    font-family: var(--fonte-body);
+    font-weight: var(--fonte-titulo);
+    padding: .5em 1em;
+    font-size: 1.3em;
+}
+
+.porcentagem-button:hover {
+    background: var(--azul-ciano);
+    color: var(--azul-escuro);
+}
+
+.porcentagem-input {
+    background: var(--cinza-claro);
+    border-radius: 5px;
+    border: 0;
+    color: var(--azul-escuro);
+    font-family: var(--fonte-body);
+    font-weight: var(--fonte-titulo);
+    padding: .5em 1em;
+    font-size: 1.3em;
+    text-align: center;
+}
