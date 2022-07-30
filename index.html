@@ -14,29 +14,28 @@
 </head>
 <body>
     <header class="cabecalho">
-       
     </header>
     <main class="principal">
         <div class="container">
             <div class="container__infos">
                 <div>
                     <h2 class="infos__titulo">Valor</h2>
-                    <input type="text" placeholder="Digite o valor total" class="infos__input">
+                    <input type="number" placeholder="Digite o valor total" class="infos__input" data-valor>
                 </div>
                 <div class="infos__box-juros">
                     <h2 class="infos__titulo">Taxa de Juros</h2>
                     <div class="infos-grid">
-                        <button class="infos__button-porcentagem">5%</button>
-                        <button class="infos__button-porcentagem">10%</button>
-                        <button class="infos__button-porcentagem">15%</button>
-                        <button class="infos__button-porcentagem">25%</button>
-                        <button class="infos__button-porcentagem">50%</button>
+                        <button class="infos__button-porcentagem" data-porcentagem="5">5%</button>
+                        <button class="infos__button-porcentagem" data-porcentagem="10">10%</button>
+                        <button class="infos__button-porcentagem" data-porcentagem="15">15%</button>
+                        <button class="infos__button-porcentagem" data-porcentagem="25">25%</button>
+                        <button class="infos__button-porcentagem" data-porcentagem="50">50%</button>
                         <input type="text" placeholder="Outra %" class="infos__input-porcentagem infos__input-custom">
                     </div>
                 </div>
                 <div>
                     <h2 class="infos__titulo">Parcelas</h2>
-                    <input type="text" placeholder="Quantas parcelas?" class="infos__input input-parcelas">
+                    <input type="number" placeholder="Quantas parcelas?" class="infos__input input-parcelas" data-parcelas>
                 </div>
             </div>
             <div class="container__resultados">
@@ -44,21 +43,20 @@
                     <div class="resultados__linha">
                         <h3 class="resultados__titulo">Valor de cada parcela</h3>
                         <p class="resultados__valor">R$
-                            <span id="resultado-parcela">400</span>
+                            <span id="resultado-parcela" data-p>400</span>
                         </p>
                     </div>
                     <div class="resultados__linha">
                         <h3 class="resultados__titulo">Valor total com Juros</h3>
                         <p class="resultados__valor">R$
-                            <span id="resultado-total">4000</span>
+                            <span id="resultado-total" data-v>4000</span>
                         </p>
                     </div>
                     <button class="resultados__button">Recalcular</button>
                 </div>
             </div>
         </div>
-        
-
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
