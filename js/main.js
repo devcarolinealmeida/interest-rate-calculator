@@ -1,7 +1,5 @@
 
-const inputParcelas = document.querySelector("[data-parcelas]")
-const displayParcela = document.querySelector("[data-p]")
-const displayTotal = document.querySelector("[data-v]")
+
 
 
 
@@ -16,6 +14,9 @@ const displayTotal = document.querySelector("[data-v]")
 
 const inputValor = document.querySelector("[data-valor]")
 const buttonPorcentagem = document.querySelectorAll("[data-porcentagem]")
+const inputParcelas = document.querySelector("[data-parcelas]")
+const displayParcela = document.querySelector("[data-p]")
+const displayTotal = document.querySelector("[data-v]")
 
 // o que sera executado qdo apertar botao porcentagem
 buttonPorcentagem.forEach((elemento) => {
@@ -26,7 +27,8 @@ buttonPorcentagem.forEach((elemento) => {
         inputParcelas.addEventListener("input", () => {
             const nParcela = parseInt(inputParcelas.value)
             const valorDivido = valorComJuros/nParcela
-            console.log(valorDivido)
+            displayParcela.textContent = valorDivido.toFixed(2)
+            displayTotal.textContent = valorComJuros.toFixed(2)
             //atualizar o display ja com os calculos feitos
             
         })
@@ -34,13 +36,6 @@ buttonPorcentagem.forEach((elemento) => {
     
 })
 
-//final para pegar n de parcelas e mostrar no display
-// inputParcelas.addEventListener("input", () => {
-//     const nParcela = parseInt(inputParcelas.value)
-//     console.log(valorComJuros/nParcela)
-//     //atualizar o display ja com os calculos feitos
-    
-// })
 
 
 
