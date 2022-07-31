@@ -4,6 +4,7 @@ const inputParcelas = document.querySelector("[data-parcelas]")
 const displayParcela = document.querySelector("[data-p]")
 const displayTotal = document.querySelector("[data-v]")
 const buttonReset = document.getElementById("recalcular")
+const inputPorcentagem = document.querySelector("[data-custom]")
 
 // o que sera executado qdo apertar botao porcentagem
 buttonPorcentagem.forEach((elemento) => {
