@@ -6,7 +6,8 @@
 ![Schermata 2022-08-01 alle 15 36 00](https://user-images.githubusercontent.com/104517812/182159943-f518d5aa-6207-4d04-9f6c-075c7f9e13af.png)
 
 > :pushpin: ***HTML, CSS and JavaScript***
-> :computer: :iphone: Responsive layout
+> :computer: :iphone: Responsive layout :hourglass_flowing_sand:
+> Deadline: 4 days
 
 --------------
 
