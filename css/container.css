@@ -155,7 +155,7 @@
     }
     .container__resultados {
         width: 35%;
-        min-height: 25vh;
+        height: 85%;
         margin-top: 0;
     }
     .resultados__coluna {
