@@ -1,6 +1,4 @@
-body {
-    overflow-x: hidden;
-}
+
 
 .principal {
     display: flex;
@@ -15,7 +13,7 @@ body {
     justify-content: space-between;
     background-color: var(--branco);
     padding: 2.2em 2em;
-    min-height: 80%;
+    min-height: auto;
     width: 80%;
     margin: 2em auto;
     border-radius: 20px;
@@ -97,6 +95,7 @@ body {
     padding: 2em;
     border-radius: 10px;
     display: flex;
+    margin-top: 3em;
 }
 
 .resultados__linha {
