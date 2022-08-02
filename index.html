@@ -13,44 +13,48 @@
     <script src="https://kit.fontawesome.com/58e9722e32.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header class="cabecalho">
+        <h1>Interest Rate Calculator</h1>
+        <p>An app that easily calculate how much you need to pay monthly if you need a financing</p>
+    </header>
     <main class="principal">
         <div class="container">
             <div class="container__infos">
                 <div>
-                    <h2 class="infos__titulo">Valor</h2>
-                    <input type="number" placeholder="Digite o valor total" class="infos__input" data-valor>
+                    <h2 class="infos__titulo">Total Amount</h2>
+                    <input type="number" placeholder="Enter the total amount" class="infos__input" data-valor>
                 </div>
                 <div class="infos__box-juros">
-                    <h2 class="infos__titulo">Taxa de Juros</h2>
+                    <h2 class="infos__titulo">Tax percentage</h2>
                     <div class="infos-grid">
                         <button class="infos__button-porcentagem" data-porcentagem="5">5%</button>
                         <button class="infos__button-porcentagem" data-porcentagem="10">10%</button>
                         <button class="infos__button-porcentagem" data-porcentagem="15">15%</button>
                         <button class="infos__button-porcentagem" data-porcentagem="25">25%</button>
                         <button class="infos__button-porcentagem" data-porcentagem="50">50%</button>
-                        <input type="text" placeholder="Outra %" class="infos__input-porcentagem infos__input-custom" data-custom data-porcentagem="">
+                        <input type="text" placeholder="Custom %" class="infos__input-porcentagem infos__input-custom" data-custom data-porcentagem="">
                     </div>
                 </div>
                 <div>
-                    <h2 class="infos__titulo">Parcelas</h2>
-                    <input type="number" placeholder="Quantas parcelas?" class="infos__input input-parcelas" data-parcelas>
+                    <h2 class="infos__titulo">Installments</h2>
+                    <input type="number" placeholder="How many installments?" class="infos__input input-parcelas" data-parcelas>
                 </div>
             </div>
             <div class="container__resultados">
                 <div class="resultados__coluna">
                     <div class="resultados__linha">
-                        <h3 class="resultados__titulo">Valor de cada parcela</h3>
-                        <p class="resultados__valor">R$
+                        <h3 class="resultados__titulo">Amount per installment</h3>
+                        <p class="resultados__valor">$
                             <span id="resultado-parcela" data-p>00.00</span>
                         </p>
                     </div>
                     <div class="resultados__linha">
-                        <h3 class="resultados__titulo">Valor total com Juros</h3>
-                        <p class="resultados__valor">R$
+                        <h3 class="resultados__titulo">Total</h3>
+                        <p class="resultados__valor">$
                             <span id="resultado-total" data-v>00.00</span>
                         </p>
                     </div>
-                    <button class="resultados__button" type="reset" id="recalcular">Recalcular</button>
+                    <button class="resultados__button" type="reset" id="recalcular">Reset</button>
                 </div>
             </div>
         </div>

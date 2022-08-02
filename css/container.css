@@ -2,11 +2,21 @@ body {
     overflow-x: hidden;
 }
 
+.cabecalho {
+    margin: 3em auto;
+    text-align: center;
+}
+
+header p {
+    display: inline-block;
+    padding-top: 1em;
+    width: 80%;
+}
 .principal {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: 100vh;
+    justify-content: flex-start;
+    height: 90vh;
 }
 
 .container {
