@@ -2,16 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-.cabecalho {
-    margin: 3em auto;
-    text-align: center;
-}
-
-header p {
-    display: inline-block;
-    padding-top: 1em;
-    width: 80%;
-}
 .principal {
     display: flex;
     flex-direction: column;

@@ -1,4 +1,13 @@
-.cabecalho > h1 {
+.cabecalho {
+    margin: 3em auto;
     text-align: center;
+    width: 80%;
+}
+
+.cabecalho > h1 {
     text-transform: uppercase;
+}
+
+.cabecalho p {
+   padding-top: 1em;
 }
