@@ -2,10 +2,12 @@
     margin: 3em auto;
     text-align: center;
     width: 80%;
+    line-height: 1.5em;
 }
 
 .cabecalho > h1 {
     text-transform: uppercase;
+    line-height: 1.2em;
 }
 
 .cabecalho p {
@@ -14,6 +16,4 @@
 
 .cabecalho article {
     margin-top: .5em;
-    line-height: 1.5em;
-    
 }
