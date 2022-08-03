@@ -11,3 +11,9 @@
 .cabecalho p {
    padding-top: 1em;
 }
+
+.cabecalho article {
+    margin-top: .5em;
+    line-height: 1.5em;
+    
+}
