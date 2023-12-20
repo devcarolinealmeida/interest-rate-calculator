@@ -81,7 +81,8 @@ body {
     font-size: 1.3em;
 }
 
-.infos__button-porcentagem:hover {
+.infos__button-porcentagem:hover, 
+.infos__button-porcentagem.selected {
     background: var(--azul-ciano);
     color: var(--azul-escuro);
 }

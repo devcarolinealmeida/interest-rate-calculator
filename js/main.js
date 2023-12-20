@@ -11,6 +11,7 @@ const inputCustom = document.querySelector("[data-custom]")
 buttonPorcentagem.forEach((elemento) => {
     let valorComJuros = "0"
     elemento.addEventListener("click", (evento) => {
+        elemento.classList.add("selected")
         const valorDigitado = parseInt(inputValor.value)
         if (evento.target.dataset.porcentagem == "") {
             inputCustom.addEventListener("input", () => {
@@ -35,6 +36,7 @@ buttonPorcentagem.forEach((elemento) => {
         inputCustom.value = ""
         displayParcela.textContent = "00.00"
         displayTotal.textContent = "00.00"
+        elemento.classList.remove("selected")
     })
 })
 
